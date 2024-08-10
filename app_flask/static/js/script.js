@@ -8,5 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleMenuBtn.addEventListener('click', function() {
         // Alternar la clase 'active' en la lista de enlaces del menú
         navLinks.classList.toggle('active');
+        document.querySelector('nav').classList.toggle('nav-open');
+        });
     });
-});
