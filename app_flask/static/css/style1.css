@@ -1,0 +1,520 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    width: auto;
+    padding: 0;
+    background-color: rgb(5, 5, 28);
+    color: #9d8ef4;
+}
+
+nav {
+    background-color: #191942;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav img {
+    max-width: 100px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #343471;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #9d8ef4;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.logo_idioma{
+    transition: transform 0.3s ease;
+    height: auto;
+    width: 90%;
+}
+
+.logo_idioma1{
+    transition: transform 0.3s ease;
+    height: 5rem;
+    width: auto;
+}
+
+.logo_idioma:hover{
+    transform: scale(1.1);
+}
+
+.logo_idioma1:hover{
+    transform: scale(1.1);
+}
+
+
+li{
+    transition: transform 0.3s ease;
+    font-family: "Micro 5", sans-serif;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+#logopropio {
+    height: 5%;
+    max-width: 10%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+#logopropio:hover {
+    transform: scale(1.1);
+}
+
+.titulo {
+    color: #d972dd;
+    font-family: "Micro 5", sans-serif;
+    font-style: normal;
+    font-size: 300%;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #d972dd;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400%;
+    font-style: normal;
+    font-size: 150%;
+    text-align: center;
+}
+
+.imagen-perfil{
+    border-radius: 50%;
+    border: 5px #d972dd;
+    transition: transform 0.3s ease;
+}
+
+.imagen-perfil:hover{
+    border-radius: 50%;
+    border: 5px #d972dd;
+    transform: rotateY(180deg)
+}
+.sobremi {
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    height: 30px;
+    gap: 30px;
+    padding: 100px;
+    align-items: center;
+    font-size: 300%;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: solid;
+}
+
+.link-perfiles{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.link-perfiles,
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width: 30%;
+}
+
+.chile{
+    height: auto;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.chile:hover{
+    transform: scale(1.1);
+}
+
+.github {
+    height: auto;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.github:hover{
+    transform: scale(1.1);
+}
+
+.linkedin{
+    height: auto;
+    width: 10% ;
+    transition: transform 0.3s ease;
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+}
+
+
+.icono-mayorque {
+    transition: transform 0.3s ease;
+    height: 50px;
+    width: 50px;
+}
+
+.icono-mayorque:hover {
+    transform: rotateX(180deg)
+}
+
+.descripcion-sobremi {
+    margin: 100px;
+    margin-top: 0;
+    text-align: center;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+.skills {
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    height: 30px;
+    gap: 30px;
+    padding: 100px;
+    align-items: center;
+    font-size: 300%;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: solid;
+}
+
+/*animaciones imagenesn skills */
+
+.python{
+    transition: transform 0.3s ease;
+}
+
+.python:hover{
+    transform: rotateX(180deg);
+}
+
+.htmlcssjs{
+    transition: transform 0.3s ease;
+}
+
+.htmlcssjs:hover{
+    transform: rotateX(180deg);
+}
+
+.flask{
+    transition: transform 0.3s ease;
+}
+
+.flask:hover{
+    transform: rotateX(180deg);
+}
+
+.sqlite{
+    border-radius: 30%;
+}
+
+.django{
+    transition: transform 0.3s ease;
+}
+
+.django:hover{
+    transform: rotateX(180deg);
+}
+
+.sqlite{
+    transition: transform 0.3s ease;
+}
+
+.sqlite:hover{
+    animation: jump 0.5s ease;
+}
+
+.mysql{
+    transition: transform 0.3s ease;
+}
+
+.mysql:hover{
+    animation: jump 0.5s ease;
+}
+
+.postgresql{
+    transition: transform 0.3s ease;
+}
+
+.postgresql:hover{
+    animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); } /* Estado inicial */
+    50% { transform: translateY(-20px); } /* Salto hacia arriba */
+    100% { transform: translateY(0); } /* Regreso al estado inicial */
+}
+
+.git{
+    border-radius: 30%;
+    transition: transform 0.3s ease;
+}
+
+.git:hover{
+    transform: scale(1.1);
+}
+
+.descripcion-sobreskills {
+    height: 10px;
+    margin-top: 0px;
+    margin: 100px;
+    margin-top: 0;
+    text-align: center;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+.imagenes-skills {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    padding: 0 50px;
+}
+
+.imagenes-skills-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    padding: 0 50px;
+}
+
+.imagenes-skills-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+    padding: 0 50px 0 50px;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    height: 50px;
+    gap: 30px;
+    padding: 100px;
+    align-items: center;
+    font-size: 300%;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: solid;
+}
+
+.pasion-artesana{
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.pasion-artesana:hover{
+    transform: rotateY(180deg);
+}
+
+.descripcion-pasion-artesana{
+    text-align: center;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+.contacto {
+    display: flex;
+    margin-left: 450px;
+    gap: 30px;
+    align-items: center;
+    font-size: 50px;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: solid;
+}
+
+form {
+    margin-left: 450px;
+    font-size: xx-large;
+    color: #d972dd;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 100px;
+}
+
+label {
+    display: flex;
+}
+
+input {
+    width: 400px;
+    height: 35px;
+    background-color: #f6aedade;
+    border-radius: 10%;
+    border-width: 3px;
+    border-color: #d972dd;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+    background-color: #f6aedade;
+    border-radius: 10%;
+    border-width: 3px;
+    border-color: #d972dd;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    background-color: #d867dc;
+    width: 100px;
+    height: 50px;
+    border-radius: 15%;
+    color: #610d4b;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: solid;
+    transition: transform 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+/* Estilos para dispositivos móviles */
+@media screen  and (max-width: 768px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+
+    #toggleMenu{
+        color: #343471;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a{
+        color: #343471;
+    }
+
+    .language-selector {
+        margin-top: 10px;
+    }
+}
+
+
+.sobremi{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.chile{
+    height: auto;
+    width: 23%;
+    transition: transform 0.3s ease;
+    align-items: center;
+}
+
+.chile:hover{
+    transform: scale(1.1);
+}
+
+.github {
+    height: auto;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.github:hover{
+    transform: scale(1.1);
+}
+
+.linkedin{
+    height: auto;
+    width: 10% ;
+    transition: transform 0.3s ease;
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+}
+
+/* Estilos para dispositivos de escritorio (pantallas más grandes) */
+@media screen and (min-width: 769px) {
+/* Ocultar el botón en dispositivos de escritorio */
+#toggleMenu {
+    display: none;
+    }
+}
+
+
+

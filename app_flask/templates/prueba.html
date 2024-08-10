@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/img/logo_propio.png">
+    <title>Portfolio Amanda</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!--estilo roboto titulo y subtitulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+    <!--estilo roboto subtitulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Micro+5&display=swap"
+        rel="stylesheet">
+    <!--estilo boton-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <!--enlaze al javascript-->
+    <script src="./static/js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img id="logopropio" src="./static/img/logo_propio.png" alt="logopropio">
+        <ul class="nav-links">
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#" class="active">Skills</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li>
+                <div class="language-selector">
+                    <a href="/#" data-lang="en" onclick="changeLanguage('en'); return false;">
+                        <img class="logo_idioma" src="./static/img/EN.png"  alt="English"></a>
+                </div>
+        </ul>
+    </nav>
+    <main>
+        <div class="titulo">
+            <h1>
+                Hola, Mundo <br>
+                Mi nombre es <br>
+                Amanda Pares Fernández
+            </h1>
+            <h2 class="subtitulo">
+                Desarrolladora Full Stack
+            </h2>
+            <img class="imagen-perfil"
+                src="./static/img/Imagen_de_WhatsApp_2024-02-24_a_las_08.37.35_c9c51fc6-removebg-preview.png"
+                alt="imagen-perfil">
+        </div>
+
+        <div class="sobremi">
+            <img class="icono-mayorque"
+                src="./static/img/Imagen_de_WhatsApp_2024-02-24_a_las_08.37.37_61315dfd-removebg-preview.png"
+                alt="iconodonut">
+            <h2>Sobre mí</h2>
+        </div>
+
+        <div class="link-perfiles">
+            <img class="chile" src="./static/img/chile.png" alt="chile" height="40px" width="auto">
+            <a href="https://github.com/AParesFermandez">
+                <img class="github" src="./static/img/logo-git-hub.png" height="30px" width="auto" alt="logogithub"></a>
+            <a href="https://www.linkedin.com/in/amanda-pares-fern%C3%A1ndez-761689171/">
+                <img class="linkedin" src="./static/img/logo-linke.png" height="30px" width="auto" alt="logo-linkedin">
+            </a>
+        </div>
+
+        <div class="descripcion-sobremi">
+            <p>
+                Soy una persona alegre, empática y muy paciente. <br>
+                Me gusta aprender cosas nuevas cada día,
+                así como aprender de los demás, <br>
+                trabajar en equipo y aprovechar al máximo cada experiencia positiva, <br>
+                convirtiendo las adversidades en oportunidades de aprendizaje. <br>
+                Estoy comprometida a crecer constantemente y ampliar mis horizontes. <br>
+                Creo firmemente que si me esfuerzo al máximo hoy, <br>
+                podré superar mis límites mañana.
+            </p>
+        </div>
+
+        <div class="skills">
+            <img class="icono-mayorque"
+                src="./static/img/Imagen_de_WhatsApp_2024-02-24_a_las_08.37.37_61315dfd-removebg-preview.png"
+                alt="iconodonut">
+            <h2>
+                Skills
+            </h2>
+        </div>
+        <div class="descripcion-sobreskills">
+            <p>Me especializo en el desarrollo Back-End, ya que tengo un gran interés en las bases de datos. <br>
+                Sin embargo, también poseo conocimientos sobre el desarrollo Front-End</p>
+        </div>
+        <div class="carrusel-container">
+            <div class="carrusel">
+                <div class="imagenes-skills">
+                    <img class="python" src="./static/img/Python-logo-notext.svg.png" height="60px" width="auto" alt="python">
+                    <img class="htmlcssjs" src="./static/img/html-css-js.png" height="60px" width="auto" alt="htmlcssjs">
+                    <img class="flask" src="./static/img/285137.webp" height="60px" width="auto" alt="flask">
+                    <img class="django" src="./static/img/django.png" height="60px" width="auto" alt="django">
+                </div>
+            </div>
+            <div class="carrusel">
+                <div class="imagenes-skills-2">
+                    <img class="sqlite" src="./static/img/sqlite.png" height="60px" width="auto" alt="sqlite">
+                    <img class="mysql" src="./static/img/database-mysql-icon-462x512-6itsq0zm.png" height="60px" width="auto" alt="mysql">
+                    <img class="postgresql" src="./static/img/postgresql.png" height="60px" width="auto" alt="postgresql">
+                </div>
+            </div>
+            <div class="carrusel">
+                <div class="imagenes-skills-3">
+                    <img class="git" src="./static/img/Imagen de WhatsApp 2024-02-24 a las 08.37.34_a2c1f2a7.jpg" height="60px"
+                        width="auto" alt="git">
+                    <img class="github" src="./static/img/logo-git-hub.png " height="60px" width="auto" alt="github">
+                </div>
+            </div>
+        </div>
+
+        <div class="proyectos">
+            <img class="icono-mayorque"
+                src="./static/img/Imagen_de_WhatsApp_2024-02-24_a_las_08.37.37_61315dfd-removebg-preview.png"
+                alt="iconodonut">
+            <h2>Proyectos</h2>
+        </div>
+        <div class="pasion-artesana">
+            <img class="pasionartesana" src="./static/img/logo.png" height="100px" width="auto" alt="pasionartesana">
+        </div>
+        <div class="descripcion-pasion-artesana">
+            <p>Pasion Artesana</p>
+            <p>Aplicación que conecta a los artesanos con compradores, <br> uno de sus objetivos principales es mantener
+                a los artesanos conectados <br> y al corriente de eventos y ferias. </p>
+            <p>En desarrollo.</p>
+        </div>
+
+
+        <div class="contacto">
+            <img class="icono-mayorque"
+                src="./static/img/Imagen_de_WhatsApp_2024-02-24_a_las_08.37.37_61315dfd-removebg-preview.png"
+                alt="iconodonut">
+            <h2 class="titulo-contacto">
+                Contacto
+            </h2>
+        </div>
+        <div class="formulario">
+            <form action="/enviar" method="POST">
+                <label class="nombre" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required> <br>
+
+                <label class="numero_celular" for="numero_celular">Teléfono:</label>
+                <input type="tel" id="numero_celular" name="numero_celular" required> <br>
+
+                <label class="email" for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label class="mensaje" for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea> <br>
+
+                <button class="boton-enviar"> Enviar </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="./static/js/slider.js"></script>
+
+</body>
+
+</html>

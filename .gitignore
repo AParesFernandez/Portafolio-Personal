@@ -1,0 +1,19 @@
+# Ignorar entornos virtuales
+venv/
+env/
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.py[cod]
+
+# Ignorar archivos de configuración de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Ignorar archivos Thumbs.db de Windows
+Thumbs.db
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de entorno
+*.env

@@ -1,0 +1,253 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #0E103D;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap; /* Añadido: Permitir envolver los elementos en dispositivos móviles */
+    gap: 0.5rem; /* Añadido: Espacio entre elementos */
+}
+
+.logo_idioma {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo_idioma:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: #d972dd;
+    text-decoration: none;
+}
+
+li {
+    transition: transform 0.3s ease;
+    font-family: "Micro 5", sans-serif;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+#logopropio {
+    height: 30%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+#logopropio:hover {
+    transform: scale(1.1);
+}
+
+.icono-mayorque {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.icono-mayorque:hover {
+    transform: rotateX(180deg);
+}
+
+/* Estilos para el contenido */
+main {
+    padding: 2rem; /* Cambiado: Seleccionado 'main' en lugar de '.main' */
+    color: #fff;
+}
+
+.titulo {
+    font-family: "Micro 5", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.subtitulo {
+    font-family: "Micro 5", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.imagen-perfil {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #d972dd;
+    transition: transform 0.3s ease;
+}
+
+.imagen-perfil:hover {
+    transform: rotateY(180deg);
+}
+
+.descripcion {
+    margin: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+}
+
+.link-perfiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link-perfiles img {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.link-perfiles img:hover {
+    transform: scale(1.1);
+}
+
+.formulario {
+    margin: auto;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6aedade;
+    color: #fff;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d867dc;
+    color: #610d4b;
+    font-family: "Arial", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Estilos para los carruseles */
+.carrusel-container {
+    display: flex;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Desplazamiento suave entre elementos */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en iOS */
+}
+
+.carrusel {
+    flex: 0 0 auto; /* No crecer ni encoger */
+    scroll-snap-align: start; /* Alinear con el principio */
+}
+
+.imagenes-skills img,
+.imagenes-skills-2 img,
+.imagenes-skills-3 img {
+    margin-right: 10px; /* Espacio entre imágenes */
+}
+
+/* Media query para hacer el sitio responsive */
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 1rem; /* Reducir el relleno en dispositivos móviles */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+        gap: 0.5rem; /* Espacio entre elementos de navegación */
+    }
+
+    .nav-links li {
+        font-size: 1.2rem; /* Reducir tamaño de fuente en dispositivos móviles */
+    }
+
+    #logopropio {
+        height: 50px; /* Ajustar tamaño del logo en dispositivos móviles */
+    }
+
+    .titulo {
+        font-size: 2rem; /* Reducir tamaño del título en dispositivos móviles */
+    }
+
+    .subtitulo {
+        font-size: 1.2rem; /* Reducir tamaño del subtitulo en dispositivos móviles */
+    }
+
+    .descripcion {
+        font-size: 1rem; /* Reducir tamaño del texto de descripción en dispositivos móviles */
+    }
+
+    .link-perfiles img {
+        height: 20px; /* Reducir tamaño de los iconos de perfil en dispositivos móviles */
+    }
+
+    /* Ajustes para la sección de carruseles */
+    .carrusel-container {
+        display: flex; /* Mostrar elementos flexibles */
+        overflow-x: auto; /* Permitir desplazamiento horizontal */
+        -webkit-overflow-scrolling: touch; /* Desplazamiento suave en iOS */
+    }
+
+    .carrusel {
+        flex: 0 0 auto; /* No crecer ni encoger */
+    }
+
+    /* Ajustes para las imágenes en los carruseles */
+    .imagenes-skills img,
+    .imagenes-skills-2 img,
+    .imagenes-skills-3 img {
+        height: 40px; /* Reducir tamaño de las imágenes en dispositivos móviles */
+        width: auto; /* Mantener relación de aspecto */
+        margin-right: 10px; /* Espacio entre imágenes */
+    }
+
+    /* Ajustes para el formulario */
+    .formulario {
+        max-width: 100%; /* Hacer que el formulario ocupe todo el ancho disponible */
+    }
+
+    /* Ajustes adicionales */
+    body {
+        overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    }
+}
+
